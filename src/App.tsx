@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { Advice } from './interfaces/AdviceInterface';
+import Card from './components/Card/Card';
 
 function App() {
-  interface Advice {
-    id: number
-    advice: string
-  }
   const [advice, setAdvice] = useState<Advice>({
     id: 0,
     advice: ""
@@ -32,9 +30,7 @@ function App() {
     fetchAdvice();
   }, [])
   return (
-    <>
-      {advice.advice}
-    </>
+    <Card id={advice.id} advice={advice.advice}  />
   )
 }
 
