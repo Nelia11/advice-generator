@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:display=swap');
+
+.card-wrapper {
+    background-color: hsl(217, 19%, 24%);
+    height: 400px;
+    width: 500px;
+    border-radius: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.desktop-divider {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advice-id {
+    color: hsl(150, 100%, 66%);
+    letter-spacing: .6rem;
+    font-weight: 800;
+}
+
+.advice-text {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.advice-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100% - 5rem - 16px);
+}
