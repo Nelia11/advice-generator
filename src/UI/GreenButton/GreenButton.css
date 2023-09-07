@@ -1,0 +1,9 @@
+.green-btn {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
