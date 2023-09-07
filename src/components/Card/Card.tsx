@@ -3,7 +3,7 @@ import "./Card.css";
 import { Advice } from "../../interfaces/AdviceInterface";
 import GreenButton from "../../UI/GreenButton/GreenButton";
 
-const Card: React.FC<Advice> = ({id, advice, handleClick}) => {
+const Card: React.FC<Advice> = ({id, advice, handleClick}) => {    
     return (
         <div className="container">
             <div className="card-wrapper">
@@ -12,6 +12,7 @@ const Card: React.FC<Advice> = ({id, advice, handleClick}) => {
                     <span className="advice-text">"{advice}"</span>
                 </div>
                 <img src="images/pattern-divider-desktop.svg" className="desktop-divider"/>
+                <img src="images/pattern-divider-mobile.svg" className="mobile-divider"/>
             </div>
             <GreenButton handleClick={handleClick}/>
         </div>        
