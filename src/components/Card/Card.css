@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 .card-wrapper {
     background-color: hsl(217, 19%, 24%);
@@ -28,7 +28,6 @@
 .advice-text {
     color: hsl(193, 38%, 86%);
     font-size: 28px;
-    font-weight: 800;
 }
 
 .advice-content {
