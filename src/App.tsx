@@ -32,13 +32,15 @@ function App() {
     }
   }
 
+  const handleClick = () => fetchAdvice();
+
   useEffect(() => {
     fetchAdvice();
   }, [])
   return (
     <>
       {isLoading ? <Loader />
-      : <Card id={advice.id} advice={advice.advice}  />}
+      : <Card id={advice.id} advice={advice.advice} handleClick={handleClick} />}
     </>
   )
 }
